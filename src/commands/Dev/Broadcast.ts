@@ -29,13 +29,13 @@ export default class Command extends BaseCommand {
 			return void (await M.reply(`Please provide the Broadcast Message.`));
 		const term = joined.trim();
 		const gifs = [
-			"https://c.tenor.com/qGBj-9nx7rsAAAPo/what-the-quintessential-quintuplets.mp4",
-			"https://c.tenor.com/mMRNByRo8XMAAAPo/nakano-yotsuba-disturbance.mp4",
-			"https://c.tenor.com/yQ_zLRi6zUkAAAPo/yotsuba-nakano.mp4",
-			"https://c.tenor.com/DpLoI6rRq4YAAAPo/nakano-yotsuba-ribbon.mp4",
-			"https://c.tenor.com/dEnq15fNv6kAAAPo/aaaa-the-quintessential-quintuplets.mp4",
-			"https://c.tenor.com/i1fRMMMvu38AAAPo/yotsuba-nakano-the-quintessential-quintuplets.mp4",
-			"https://c.tenor.com/l2F9LrkJEKYAAAPo/yotsuba-nakano.mp4",
+			"https://c.tenor.com/Giv4A22u3KUAAAPo/zero-two-smile.mp4",
+			"https://c.tenor.com/a_rN_4QgvgsAAAPo/02-zero-two.mp4",
+			"https://c.tenor.com/wl5QipqQBG0AAAPo/02.mp4",
+			"https://c.tenor.com/Leh2GUmqxcsAAAPo/hi.mp4",
+			"https://c.tenor.com/7Ydf6mqbZtYAAAPo/zero-two-anime.mp4",
+			"https://c.tenor.com/dqA9YN9_oOwAAAPo/zero-two.mp4",
+			"https://c.tenor.com/ZbraeF5BI7kAAAPo/anime-zero-two.mp4",
 		];
 		const selected = gifs[Math.floor(Math.random() * gifs.length)];
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -46,7 +46,7 @@ export default class Command extends BaseCommand {
 			.map((jids) => (jids.includes("g.us") ? jids : null))
 			.filter((v) => v);
 		for (let i = 0; i < chats.length; i++) {
-			const text = `*⚡「YOTSUBA BROADCAST」⚡*\n\n${term}\n\n Regards ~ *${M.sender.username}*`;
+			const text = `*📍「Zero Two Broadcast」📍*\n\n${term}\n\n Regards ~ *${M.sender.username}*`;
 			this.client.sendMessage(chats[i], { url: selected }, MessageType.video, {
 				mimetype: Mimetype.gif,
 				caption: `${text}`,
