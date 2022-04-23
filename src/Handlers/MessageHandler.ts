@@ -100,7 +100,7 @@ export default class MessageHandler {
                     MessageType.video,
                     Mimetype.gif,
                     undefined,
-                    `*${M.sender.username}* You are using wrong command kindly use *${this.client.config.prefix}help* for right commands`,
+                    `*${M.sender.username}* Darling you are using wrong command. Please type *${this.client.config.prefix}help* to know my commands`,
                     undefined
                 )
 		const user = await this.client.getUser(M.sender.jid);
