@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
-        if (!joined) return void M.reply('Please provide me the question')
+        if (!joined) return void M.reply('Darling Please ask me the question')
         const place = joined.trim()
         await axios
             .get(
@@ -37,7 +37,7 @@ export default class Command extends BaseCommand {
                 M.reply(text)
             })
             .catch((err) => {
-                M.reply(`Sorry, couldn't find any Answers.`)
+                M.reply(`Sorry Darling, i couldn't find any Answers.`)
             })
     }
 }
