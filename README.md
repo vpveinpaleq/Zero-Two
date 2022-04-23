@@ -1,7 +1,7 @@
 <div align="center">
-<a href="https://ibb.co/6P3BsqY"><img src="https://wallpapercave.com/uwp/uwp2332472.jpeg" alt="21-akeno-wallpaper-Images-of-Akeno-Himejima-Wallpaper-industrious-info" border="0"></a>
+<a href="https://ibb.co/6P3BsqY"><img src="https://wallpapercave.com/uwp/uwp2350296.jpeg" alt="21-akeno-wallpaper-Images-of-Akeno-Himejima-Wallpaper-industrious-info" border="0"></a>
 
-# **AKENO BOT**
+# **Zero Two BOT**
 #### **Advanced WhatsApp Bot With Rich Anime Features Developed by [FantoX](https://github.com/FantoX001)**
 
 
@@ -13,10 +13,10 @@ A Fully Modular, fast and Efficient Bot. <br>
     
     
 <br/>   
-Deply Akeno form Heroku
+Deply Zero Two form Heroku
 
 
-<br>[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/FantoX001/Akeno)
+<br>[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/FantoX001/Zero-Two)
 <br/><br/>
 
 
