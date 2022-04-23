@@ -21,14 +21,14 @@ export default class Command extends BaseCommand {
             : [M.sender.jid, this.client.user.jid]
 
         if (M.quoted?.sender) M.mentioned.push(M.quoted.sender)
-        if (!M.mentioned.length || !M.mentioned[0]) return void M.reply('Mention the user whom you want to ban')
+        if (!M.mentioned.length || !M.mentioned[0]) return void M.reply('Darling please mention the user whom you want to ban!')
         let text = '*STATE*\n\n'
         // declare tagged as (string | undefined) []
         // const tagged : (string | undefined)[] = []
         for (const user of M.mentioned) {
             if (immortals.includes(user)) {
                 // tagged.push(user)
-                text += `🟨 @${user.split('@')[0]} is an immortal, can't be banned\n`
+                text += `🟨 @${user.split('@')[0]} is my immortal Darling, so i can't ban him.\n`
                 continue
             }
             const data = await this.client.getUser(user)
@@ -36,12 +36,12 @@ export default class Command extends BaseCommand {
             // const username = info.notify || info.vname || info.name || user.split('@')[0]
             // const username = user.split('@')[0]
             if (data?.ban) {
-                text += `🟨 @${user.split('@')[0]}: Already Banned\n`
+                text += `🟨 @${user.split('@')[0]}: is already Banned by me.\n`
                 continue
             }
             await this.client.blockUser(user);
             await this.client.banUser(user)
-            text += `🟥 @${user.split('@')[0]}: Banned\n`
+            text += `🟥 @${user.split('@')[0]}: is now Banned.\n`
         }
         await M.reply(
             `${text}`,
