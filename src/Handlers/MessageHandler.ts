@@ -96,7 +96,7 @@ export default class MessageHandler {
 		   );
 		   if (M.quoted?.sender) M.mentioned.push(M.quoted.sender);
 			if (!command)
-			return void M.reply( await request.buffer(`https://c.tenor.com/Uhi10UixVYoAAAPo/yotsuba-gotoubun.mp4`),
+			return void M.reply( await request.buffer(`https://c.tenor.com/7ZzPY3wgX_4AAAPo/zero-two-002.mp4`),
                     MessageType.video,
                     Mimetype.gif,
                     undefined,
@@ -115,16 +115,16 @@ export default class MessageHandler {
 				}`
 			);
 		if (!command.config?.dm && M.chat === "dm")
-			return void M.reply("This command can only be used in groups");
+			return void M.reply("Darling this command can only be used in groups.");
 		if (
 			command.config?.modsOnly &&
 			!this.client.config.mods?.includes(M.sender.jid)
 		) {
-			return void M.reply(`Only MODS are allowed to use this command.`);
+			return void M.reply(`Darling only MODS are allowed to use this command.`);
 		}
 		if (command.config?.adminOnly && !M.sender.isAdmin)
 			return void M.reply(
-				`This command is only meant for the group admins, Baka!`
+				`Darling this command is only made for the group admins, Baka!`
 			);
 		try {
 			await command.run(M, this.parseArgs(args));
