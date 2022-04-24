@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
-        if (!joined) return void M.reply('Provide the value to calculate, Baka!')
+        if (!joined) return void M.reply('Darling, pls provide the value to calculate !')
         const value = joined.trim()
         const calc = evaluate(value);
 				const text = `💡 *Solution for ${value} = ${calc}*`;
