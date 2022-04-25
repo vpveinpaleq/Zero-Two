@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
             const n = [
-            'https://telegra.ph/file/cc211d2b195ccbef82bff.mp4'
+            'https://c.tenor.com/dEYkyvVk4OQAAAPo/lol.mp4'
         ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
 	if (!parsedArgs.joined) {
@@ -43,13 +43,13 @@ export default class Command extends BaseCommand {
 				}
 			}
             let text = `
-╭─「(づ￣ 3￣)づ」
+╭──────────────────𐏋
 │⋊ 𝕌𝕤𝕖𝕣: *${M.sender.username}*
-│⋊ ℕ𝕒𝕞𝕖: Yᴏᴛsᴜʙᴀ
+│⋊ ℕ𝕒𝕞𝕖: Zero Two
 │⋊ ℙ𝕣𝕖𝕗𝕚𝕩: ${this.client.config.prefix}
 │⋊ 𝕆𝕨𝕟𝕖𝕣: *${this.client.config.prefix}mod*
-│⋊ 𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝 𝔾𝕣𝕠𝕦𝕡: http://gg.gg/Piku-and-yotsuba-support
-╰────────────┈平和                            \n\n`
+│⋊ 𝕆𝕗𝕗𝕚𝕥𝕚𝕒𝕝 𝕊𝕦𝕡𝕡𝕠𝕣𝕥 𝔾𝕣𝕠𝕦𝕡: https://chat.whatsapp.com/KK6AVKEwPVJ0aXoWo2cK2g
+╰──────────────────𐏋                            \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
                 text += `*『 ${this.client.util.capitalize(
@@ -60,12 +60,16 @@ export default class Command extends BaseCommand {
             return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {quoted:M.WAMessage,
             mimetype: Mimetype.gif,
             caption: `${text} 
- ──❅┈[ 𝒀𝒐𝒕𝒔𝒖𝒃𝒂 𝑩𝒐𝒕 ]┈❅───
+ 
+ 
+ ──❅┈[ 𝑍𝑒𝑟𝑜 𝑇𝑤𝑜 𝐵𝑜𝑡 ]┈❅──
+ 
 ┌────────────┈❅
-│   🧨 YᴏᴛsUʙᴀ
-│   ©️ ՏYᑎTᕼᗴՏIᘔᗴᗪ IᑎᖴIᑎITY
+│   『 Zero Two 』
+│    Developer: Fantox
 └────────────┈⁂
-❅┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈❅
+❅┈[𝘏𝘢𝘷𝘦 𝘢 𝘎𝘳𝘦𝘢𝘵 𝘋𝘢𝘺]┈❅
+
 🎗 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
             )
         }
