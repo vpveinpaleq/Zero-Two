@@ -30,7 +30,7 @@ export default class Command extends BaseCommand {
             }
             // check if user is Bot
             else if (this.client.user.jid === user) {
-                text += `✖ Skipped *@${user.split('@')[0]}* as that's me. Why do you want to remove me?\n`
+                text += `✖ Skipped *@${user.split('@')[0]}* as that's me. Why do you want to remove me Darling?\n`
             } else {
                 text += `🟥 Removed *@${user.split('@')[0]}*\n`
                 await this.client.groupRemove(M.from, [user])
