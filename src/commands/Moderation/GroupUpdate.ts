@@ -20,14 +20,14 @@ export default class Command extends BaseCommand {
         if (!M.groupMetadata?.admins?.includes(this.client.user.jid))
             return void M.reply('Can not update without being an admin')
         // check if first parameter is subject or description
-        if (M.args.length < 2) return void M.reply('You need to specify a subject and a value')
+        if (M.args.length < 2) return void M.reply('📍 Darling, you need to specify a subject and a value')
         const subject = M.args[1].toLowerCase()
         const value = M.args.slice(2).join(' ')
         if (subject === 'sub' || subject === 'subject') {
             await this.client
                 .groupUpdateSubject(M.groupMetadata.id, value.toString())
                 .then(() => {
-                    return void M.reply('Group subject updated')
+                    return void M.reply('📍 Group subject updated')
                 })
                 .catch((e) => {
                     console.error(e)
@@ -37,7 +37,7 @@ export default class Command extends BaseCommand {
             await this.client
                 .groupUpdateDescription(M.groupMetadata.id, value.toString())
                 .then(() => {
-                    return void M.reply('Group description updated')
+                    return void M.reply('📍 Group description updated')
                 })
                 .catch((e) => {
                     console.log(e)
