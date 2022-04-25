@@ -50,7 +50,7 @@ export default class Command extends BaseCommand {
 			});
 		let text = "";
 		const result = anime.data[0].node;
-		text += `🎀 *Title: ${result.title}*\n`;
+		text += `📍 *Title: ${result.title}*\n`;
 		text += `🎋 *Format: ${result.media_type.toUpperCase()}*\n`;
 		text += `📈 *Status: ${result.status.toUpperCase().replace(/\_/g, " ")}*\n`;
 		text += `🍥 *Total episodes: ${result.num_episodes}*\n`;
@@ -59,7 +59,7 @@ export default class Command extends BaseCommand {
 			text += `*${result.genres[i].name}*\n`;
 		}
 		text += `✨ *Based on: ${result.source.toUpperCase()}*\n`;
-		text += `📍 *Studios:*\n`;
+		text += `🎀 *Studios:*\n`;
 		for (let i = 0; i < result.studios.length; i++) {
 			text += `*${result.studios[i].name}*\n`;
 		}
