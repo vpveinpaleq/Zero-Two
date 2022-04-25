@@ -33,9 +33,9 @@ export default class Command extends BaseCommand {
         try {
             pfp = await this.client.getProfilePicture(user)
         } catch (err) {
-            M.reply(`Profile Picture not Accessible of ${username}`)
+            M.reply(`Profile picture is view contacts only of ${username}`)
             pfp =
-                'https://www.linkpicture.com/q/OIP-depositphotos-bgremover.png'
+                'https://wallpapercave.com/wp/wp5982004.jpg'
         }
         const exp = (await this.client.getUser(user)).Xp
         let role: string;
@@ -54,11 +54,11 @@ export default class Command extends BaseCommand {
 				} else if (exp < 50000) {
 					role = "🔶️ Ace";
 				} else if (exp < 75000) {
-					role = "🌀 Hero";
+					role = "💫 Hero";
 				} else if (exp < 100000) {
 					role = "💎 Supreme";
 				} else {
-					role = "❄️ Mystic";
+					role = "📍 My Immortal Darling 📍";
 				}
 
 				let level: number;
@@ -86,7 +86,7 @@ export default class Command extends BaseCommand {
         await M.reply(
             await request.buffer(
                 pfp ||
-                    'https://cdn.donmai.us/original/04/b8/04b83e229baed4a8e83787d75b28a614.jpg'
+                    'https://wallpapercave.com/wp/wp5261611.png'
             ),
             MessageType.image,
             undefined,
