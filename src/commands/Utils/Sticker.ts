@@ -98,7 +98,7 @@ export default class Command extends BaseCommand {
 					(flag) => (parsedArgs.joined = parsedArgs.joined.replace(flag, ""))
 				);
 				if (!buffer)
-					return void M.reply(`You didn't provide any Image/Video to convert`);
+					return void M.reply(`📍 You didn't provide any Image/Video to convert`);
 				const sticker = await new Sticker(buffer, getOptions())
 					.build()
 					.catch(() => null);
