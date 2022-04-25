@@ -23,7 +23,7 @@ export default class Command extends BaseCommand {
 		caption += `📍`;
 		if (!(await this.client.getGroupData(M.from)).nsfw)
 			return void M.reply(
-				`Don't be a pervert, Baka! This is not an NSFW group.`
+				`Don't be a pervert, Baka! This command is only useable in NSFW groups.`
 			);
 		M.reply(
 			await this.client.util.GIFBufferToVideoBuffer(
