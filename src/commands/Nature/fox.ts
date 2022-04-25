@@ -33,7 +33,7 @@ export default class Command extends BaseCommand {
             MessageType.image,
             undefined,
             undefined,
-            `Awooooo\n`,
+            `📍 Awooooo...\n`,
             undefined
           ).catch((e) => {
             console.log(
