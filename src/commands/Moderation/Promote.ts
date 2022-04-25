@@ -18,7 +18,7 @@ export default class Command extends BaseCommand {
     run = async (M: ISimplifiedMessage): Promise<void> => {
         if (!M.groupMetadata?.admins?.includes(this.client.user.jid))
 					return void M.reply(
-						`How can I promote someone without being an admin?`
+						`📍 Darling tell me, how can I Promote someone without being an Admin?`
 					);
 				if (M.quoted?.sender) M.mentioned.push(M.quoted.sender);
 				if (!M.mentioned.length)
