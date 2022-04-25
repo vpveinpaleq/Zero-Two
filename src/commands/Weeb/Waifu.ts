@@ -29,7 +29,7 @@ export default class Command extends BaseCommand {
             {buttonId: 'loli', buttonText: {displayText: 'Gib loli'}, type: 1}
           ]
           const buttonMessage: any = {
-            contentText: 'More than one waifu, will ruin your laifu.\n',
+            contentText: 'More than one waifu, will definitely ruin your laifu my Darling.\n',
             footerText: '',
             buttons: buttons,
             headerType: 4,
