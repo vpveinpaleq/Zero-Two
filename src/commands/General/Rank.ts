@@ -34,7 +34,7 @@ export default class Command extends BaseCommand {
 		} catch (err) {
 			M.reply(`Profile Picture not Accessible of ${username}`);
 			pfp =
-				"https://cdn.donmai.us/original/ab/5e/ab5e2ec951546e5df432c9233ef9ab8a.jpg";
+				"https://wallpapercave.com/wp/wp6434536.jpg";
 		}
 		const exp = (await this.client.getUser(user)).Xp;
 		let role: string;
@@ -57,7 +57,7 @@ export default class Command extends BaseCommand {
 		} else if (exp < 100000) {
 			role = "💎 Supreme";
 		} else {
-			role = "❄️ Mystic";
+			role = "📍 My Immortal Darling 📍";
 		}
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		let level: number;
