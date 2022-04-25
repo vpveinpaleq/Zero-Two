@@ -1,18 +1,18 @@
 {
-    "name": "chitoge",
+    "name": "Zero Two",
     "version": "3.0.0",
-    "description": "A WhatsApp Bot With Rich Anime Features.",
-    "main": "dist/chitoge.js",
+    "description": "A WhatsApp Bot With Rich Anime Features Developed by: Fantox.",
+    "main": "dist/zerotwo.js",
     "scripts": {
         "build": "tsc -p .",
-        "start": "node dist/chitoge.js",
+        "start": "node dist/zerotwo.js",
         "lint": "eslint \"src/**/*.ts\"",
         "prettier-format": "prettier --config .prettierrc \"src/**/*.ts\" --write",
         "postinstall": "yarn run build"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ShineiIchijo/Chitoge.git"
+        "url": "https://github.com/FantoX001/Zero-Two.git"
     },
     "keywords": [
         "bot",
@@ -23,9 +23,9 @@
     "author": "Synthesized Infinity & Shinei Ichijo",
     "license": "AGPL-3.0",
     "bugs": {
-        "url": "https://github.com/ShineiIchijo/Chitoge/issues"
+        "url": "https://github.com/FantoX001/Zero-Two/issues"
     },
-    "homepage": "https://github.com/ShineiIchijo/Chitoge#readme",
+    "homepage": "https://github.com/FantoX001/Zero-Two#readme",
     "devDependencies": {
         "@types/express": "^4.17.12",
         "@types/fs-extra": "^9.0.13",
