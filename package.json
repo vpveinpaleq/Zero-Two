@@ -2,10 +2,10 @@
     "name": "Zero Two",
     "version": "3.0.0",
     "description": "A WhatsApp Bot With Rich Anime Features Developed by: Fantox.",
-    "main": "dist/zerotwo.js",
+    "main": "dist/Chitoge.js",
     "scripts": {
         "build": "tsc -p .",
-        "start": "node dist/zerotwo.js",
+        "start": "node dist/Chitoge.js",
         "lint": "eslint \"src/**/*.ts\"",
         "prettier-format": "prettier --config .prettierrc \"src/**/*.ts\" --write",
         "postinstall": "yarn run build"
