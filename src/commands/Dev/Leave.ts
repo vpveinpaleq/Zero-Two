@@ -23,7 +23,7 @@ export default class Command extends BaseCommand {
         MessageType.image,
                     undefined,
                     undefined,
-                    `*Sayonara Mina* 👋\n`,
+                    `*Sayonara Darling* 👋\n`,
                     undefined
                     ).catch((reason: any) =>
                     M.reply(`✖ An error occurred. Please try again later.`))
