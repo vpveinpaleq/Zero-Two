@@ -1,9 +1,7 @@
-import { MessageType, Mimetype } from '@adiwajshing/baileys/lib/WAConnection'
 import axios from 'axios'
 import chalk from 'chalk'
 import { join } from 'path'
 import BaseCommand from '../lib/BaseCommand'
-import request from '../lib/request'
 import WAClient from '../lib/WAClient'
 import { ICommand, IParsedArgs, ISimplifiedMessage } from "../typings";
 
@@ -28,9 +26,9 @@ export default class MessageHandler {
 				this.client.user.name ||
 				this.client.user.vname ||
 				this.client.user.short ||
-				"Zero Two";
+				"Akeno";
 		} else if (M.WAMessage.key.fromMe) return void null;
-		    
+
 		if (M.from.includes("status")) return void null;
 		const { args, groupMetadata, sender } = M;
 		if (M.chat === "dm" && this.client.isFeature("chatbot")) {
