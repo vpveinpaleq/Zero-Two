@@ -55,6 +55,7 @@ export default class MessageHandler {
 		}
 		if (!M.groupMetadata && !(M.chat === "dm")) return void null;
 
+		
 		if (
 			(await this.client.getGroupData(M.from)).mod &&
 			M.groupMetadata?.admins?.includes(this.client.user.jid)
@@ -89,9 +90,8 @@ export default class MessageHandler {
 			)} from ${chalk.green(sender.username)} in ${chalk.cyanBright(
 				groupMetadata?.subject || "DM"
 			)}`
-		   );
-		   if (M.quoted?.sender) M.mentioned.push(M.quoted.sender);
-			if (!command)
+		);
+		if (!command)
 			return void M.reply( await request.buffer(`https://c.tenor.com/7ZzPY3wgX_4AAAPo/zero-two-002.mp4`),
                     MessageType.video,
                     Mimetype.gif,
