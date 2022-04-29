@@ -5,6 +5,7 @@ import WAClient from '../../lib/WAClient'
 import { IParsedArgs, ISimplifiedMessage } from '../../typings'
 import Genius from 'genius-lyrics'
 import request from '../../lib/request'
+import yts from "yt-search";
 
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
@@ -24,7 +25,7 @@ export default class Command extends BaseCommand {
     if (!this.client.config.geniusKey)
       return void M.reply("No Genius Access Token set.");
     if (!joined)
-      return void M.reply("Darling, give me a song name to fetch the lyrics, Baka!");
+      return void M.reply("Darling, give me a song name to give you the lyrics, Baka!");
     const term = joined.trim();
     const Client = new Genius.Client(this.client.config.geniusKey);
     let search;
@@ -35,7 +36,7 @@ export default class Command extends BaseCommand {
     }
     //if(search.error) return void M.reply(`Couldn't find any matching song results.`)
     const lyrics = await search[0].lyrics();
-    let text = `✨ *Title: ${search[0].title}*\n\n`;
+    let text = `📍 *Title: ${search[0].title}*\n\n`;
     text += `🌐 *URL: ${search[0].url}*\n`;
     await M.reply(
       await this.client.getBuffer(search[0].image),
