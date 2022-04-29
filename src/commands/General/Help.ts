@@ -70,7 +70,7 @@ export default class Command extends BaseCommand {
 └────────────┈⁂
 ❅┈[𝘏𝘢𝘷𝘦 𝘢 𝘎𝘳𝘦𝘢𝘵 𝘋𝘢𝘺]┈❅
 
-🎗 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
+🎗 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info and don't spam or call Zero Two.*` }
             )
         }
         const key = parsedArgs.joined.toLowerCase()
