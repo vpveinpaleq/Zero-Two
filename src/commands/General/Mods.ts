@@ -7,7 +7,7 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             command: 'mods',
-            description: "Displays the Moderators' contact info",
+            description: "Displays the Moderator's contact info",
             category: 'general',
             usage: `${client.config.prefix}mods`,
             aliases: ['moderators', 'mod', 'owner']
