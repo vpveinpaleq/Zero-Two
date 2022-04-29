@@ -1,7 +1,9 @@
+import { MessageType, Mimetype } from '@adiwajshing/baileys/lib/WAConnection'
 import axios from 'axios'
 import chalk from 'chalk'
 import { join } from 'path'
 import BaseCommand from '../lib/BaseCommand'
+import request from '../lib/request'
 import WAClient from '../lib/WAClient'
 import { ICommand, IParsedArgs, ISimplifiedMessage } from "../typings";
 
@@ -26,9 +28,9 @@ export default class MessageHandler {
 				this.client.user.name ||
 				this.client.user.vname ||
 				this.client.user.short ||
-				"Zero Two";
+				"ZeroTwo";
 		} else if (M.WAMessage.key.fromMe) return void null;
-
+		    
 		if (M.from.includes("status")) return void null;
 		const { args, groupMetadata, sender } = M;
 		if (M.chat === "dm" && this.client.isFeature("chatbot")) {
@@ -55,7 +57,6 @@ export default class MessageHandler {
 		}
 		if (!M.groupMetadata && !(M.chat === "dm")) return void null;
 
-		
 		if (
 			(await this.client.getGroupData(M.from)).mod &&
 			M.groupMetadata?.admins?.includes(this.client.user.jid)
@@ -90,13 +91,14 @@ export default class MessageHandler {
 			)} from ${chalk.green(sender.username)} in ${chalk.cyanBright(
 				groupMetadata?.subject || "DM"
 			)}`
-		);
-		if (!command)
+		   );
+		   if (M.quoted?.sender) M.mentioned.push(M.quoted.sender);
+			if (!command)
 			return void M.reply( await request.buffer(`https://c.tenor.com/7ZzPY3wgX_4AAAPo/zero-two-002.mp4`),
                     MessageType.video,
                     Mimetype.gif,
                     undefined,
-                    `*${M.sender.username}* Darling you are using wrong command. Please type *${this.client.config.prefix}help* to know my commands`,
+                    `*${M.sender.username}* Darling you are using wrong command. Please type *${this.client.config.prefix}help* to know my commands.`,
                     undefined
                 )
 		const user = await this.client.getUser(M.sender.jid);
