@@ -21,7 +21,7 @@ export default class WAClient extends Base {
 	assets = new Map<string, Buffer>();
 	constructor(public config: IConfig) {
 		super();
-		this.browserDescription[0] = "Zero Two Bot";
+		this.browserDescription[0] = "ZeroTwo";
 		this.version = [3, 3234, 9];
 		this.logger.level = "fatal";
 
@@ -167,7 +167,7 @@ export default class WAClient extends Base {
 
 	log = (text: string, error?: boolean): void => {
 		console.log(
-			chalk[error ? "red" : "green"]("[ZEROTWO]"),
+			chalk[error ? "red" : "green"]("[CHITOGE]"),
 			chalk.blue(moment(Date.now() * 1000).format("DD/MM HH:mm:ss")),
 			chalk.yellowBright(text)
 		);
