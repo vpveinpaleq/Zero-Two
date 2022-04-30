@@ -1,5 +1,5 @@
 {
-    "name": "ZeroTwo",
+    "name": "Zerotwo",
     "version": "3.0.0",
     "description": "A WhatsApp Bot With Rich Anime Features Developed by: Fantox.",
     "main": "dist/zerotwo.js",
@@ -20,7 +20,7 @@
         "whatsapp",
         "chitoge"
     ],
-    "author": "Synthesized Infinity & Shinei Ichijo",
+    "author": "Fantox",
     "license": "AGPL-3.0",
     "bugs": {
         "url": "https://github.com/FantoX001/Zero-Two/issues"
