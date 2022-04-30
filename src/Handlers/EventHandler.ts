@@ -17,7 +17,7 @@ export default class EventHandler {
         if (!data.events) return void null
         const add = event.action === 'add'
         const text = add
-					? `- ${group.subject || "___"} -\n\n💠 *Group Description:*\n${
+					? `💠 ${group.subject || "___"} 💠\n\n💠 *Group Description:*\n${
 							group.desc
 					  }\n\nHope you will follow all the rules and have fun Darling!\n\n${event.participants
 							.map((jid) => `@${jid.split("@")[0]}`)
