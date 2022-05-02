@@ -48,7 +48,7 @@ export default class Command extends BaseCommand {
 │⋊ ℕ𝕒𝕞𝕖: Zero Two
 │⋊ ℙ𝕣𝕖𝕗𝕚𝕩: ${this.client.config.prefix}
 │⋊ 𝕆𝕨𝕟𝕖𝕣: *${this.client.config.prefix}mod*
-│⋊ 𝕆𝕗𝕗𝕚𝕥𝕚𝕒𝕝 𝕊𝕦𝕡𝕡𝕠𝕣𝕥 𝔾𝕣𝕠𝕦𝕡: https://chat.whatsapp.com/KK6AVKEwPVJ0aXoWo2cK2g
+│⋊ 𝕆𝕗𝕗𝕚𝕥𝕚𝕒𝕝 𝕊𝕦𝕡𝕡𝕠𝕣𝕥 𝔾𝕣𝕠𝕦𝕡: http://gg.gg/10xtwj
 ╰──────────────────𐏋                            \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
@@ -64,11 +64,12 @@ export default class Command extends BaseCommand {
  
  ──❅┈[ 𝑍𝑒𝑟𝑜 𝑇𝑤𝑜 𝐵𝑜𝑡 ]┈❅──
  
+ 
 ┌────────────┈❅
 │   『 Zero Two 』
-│    Developer: Fantox
+│   Based on: Chitoge and Void
+│   Reverse Engineer: Fantox
 └────────────┈⁂
-❅┈[𝘏𝘢𝘷𝘦 𝘢 𝘎𝘳𝘦𝘢𝘵 𝘋𝘢𝘺]┈❅
 
 🎗 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info and don't spam or call Zero Two.*` }
             )
