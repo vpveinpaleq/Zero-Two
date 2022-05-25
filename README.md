@@ -21,8 +21,8 @@ Deply Zero Two form Heroku
 
 
 <br></div>
-## 🧣 Zero Two Deployment [Tutorial](https://youtu.be/KVrt3iKO4L0)  
-✨ Follow this tutorial for Zero Two's error free self hosting.
+## 🧣 Zero Two Deployment   
+✨ Follow this [Tutorial](https://youtu.be/KVrt3iKO4L0) for Zero Two's error free self hosting.
     
 
 <br></div>
