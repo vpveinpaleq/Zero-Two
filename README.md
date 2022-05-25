@@ -20,10 +20,13 @@ Deply Zero Two form Heroku
 <br/><br/>
 
 
-</div><br/>
-<br/>
+<br></div>
+## 🧣 Zero Two Deployment [Tutorial](https://youtu.be/KVrt3iKO4L0)  
+✨ Follow this tutorial for Zero Two's error free self hosting.
+    
 
-## ✨ Highlights of Zero Two Bot
+<br></div>
+## 🦋 Highlights of Zero Two Bot
 
 -   Fully Modular Design
 -   Object Oriented
@@ -33,8 +36,9 @@ Deply Zero Two form Heroku
 -   Built with [Baileys](https://github.com/adiwajshing/baileys) (The Best
     WhatsApp Library Out Available There)
 
-## 💻 How to deploy/host Akeno
+## 💻 How to deploy/host Zero Two
 
+-   [Video Tutorial for Zero Two Deployment](https://youtu.be/KVrt3iKO4L0)
 -   Pls check ["Zero Two Guides"](https://github.com/FantoX001/Akeno-Guides/blob/main/README.md) for error free hosting/deployment.
 
 
