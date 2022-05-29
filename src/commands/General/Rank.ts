@@ -188,27 +188,79 @@ export default class Command extends BaseCommand {
 					level = 35;
 				}
 		let required: number;
-		if (exp < 500) {
-			required = 500;
-		} else if (exp < 1000) {
-			required = 1000;
-		} else if (exp < 2000) {
-			required = 2000;
-		} else if (exp < 5000) {
-			required = 5000;
-		} else if (exp < 10000) {
-			required = 10000;
-		} else if (exp < 25000) {
-			required = 25000;
-		} else if (exp < 50000) {
-			required = 50000;
-		} else if (exp < 75000) {
-			required = 75000;
-		} else if (exp < 100000) {
-			required = 100000;
-		} else {
-			required = 0;
-		}
+				if (exp < 500) {
+					required = 500;
+				} else if (exp < 1000) {
+					required = 1000;
+				} else if (exp < 2000) {
+					required = 2000;
+				} else if (exp < 3000) {
+					required = 3000;
+				} else if (exp < 4000) {
+					required = 4000;
+				} else if (exp < 5000) {
+					required = 5000;
+				} else if (exp < 7000) {
+					required = 7000;
+				} else if (exp < 8500) {
+					required = 8500;
+				} else if (exp < 10000) {
+					required = 10000;
+				} else if (exp < 15000) {
+					required = 15000;
+				} else if (exp < 20000) {
+					required = 20000;
+				} else if (exp < 25000) {
+					required = 25000;
+				} else if (exp < 50000) {
+					required = 50000;
+				} else if (exp < 75000) {
+					required = 75000;
+				} else if (exp < 100000) {
+					required = 100000;
+				} else if (exp < 120000) {
+					required = 120000;
+				} else if (exp < 130000) {
+					required = 130000;
+				} else if (exp < 150000) {
+					required = 150000;
+				} else if (exp < 200000) {
+					required = 200000;
+				} else if (exp < 220000) {
+					required = 220000;
+				} else if (exp < 250000) {
+					required = 250000;
+				} else if (exp < 280000) {
+					required = 280000;
+				} else if (exp < 300000) {
+					required = 300000;
+				} else if (exp < 350000) {
+					required = 350000;
+				} else if (exp < 400000) {
+					required = 400000;
+				} else if (exp < 450000) {
+					required = 450000;
+				} else if (exp < 500000) {
+					required = 500000;
+				} else if (exp < 550000) {
+					required = 550000;
+				} else if (exp < 600000) {
+					required = 600000;
+				} else if (exp < 650000) {
+					required = 650000;
+				} else if (exp < 700000) {
+					required = 700000;
+				} else if (exp < 750000) {
+					required = 750000;
+				} else if (exp < 800000) {
+					required = 800000;
+				} else if (exp < 850000) {
+					required = 850000;
+				} else if (exp < 900000) {
+					required = 900000;
+				} else {
+					level = 35;
+				}
 		const rank = new Canvacord.Rank()
 			.setAvatar(pfp)
 			.setCurrentXP(exp || 0)
