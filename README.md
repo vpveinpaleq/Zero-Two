@@ -48,7 +48,7 @@ Deply Zero Two form Heroku
 
 
 
-## Owner Credits:
+## 💓 Owner Credits:
 
 -   Adiwajshing sir for [Baileys](https://github.com/adiwajshing/baileys)
 -   ShineiIchijo for [Chitoge](https://github.com/ShinNouzen/Chitoge)
