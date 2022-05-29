@@ -259,7 +259,7 @@ export default class Command extends BaseCommand {
 				} else if (exp < 900000) {
 					required = 900000;
 				} else {
-					level = 35;
+					required=999999999999;
 				}
 		const rank = new Canvacord.Rank()
 			.setAvatar(pfp)
