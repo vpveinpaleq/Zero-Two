@@ -17,32 +17,14 @@ export default class Command extends BaseCommand {
         })
     }
 
-    run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
-            const n = [
+    run = async (M: ISimplifiedMessage): Promise<void> => {
+        const n = [
             'https://c.tenor.com/dEYkyvVk4OQAAAPo/lol.mp4'
         ]
-        let chitoge = n[Math.floor(Math.random() * n.length)]
-	if (!parsedArgs.joined) {
-			const commands = this.handler.commands.keys();
-			const categories: { [key: string]: ICommand[] } = {};
-			for (const command of commands) {
-				const info = this.handler.commands.get(command);
-				if (!command) continue;
-				if (!info?.config?.category || info.config.category === "dev") continue;
-				if (
-					!info?.config?.category ||
-					(info.config.category === "nsfw" &&
-						!(await this.client.getGroupData(M.from)).nsfw)
-				)
-					continue;
-				if (Object.keys(categories).includes(info.config.category))
-					categories[info.config.category].push(info);
-				else {
-					categories[info.config.category] = [];
-					categories[info.config.category].push(info);
-				}
-			}
-            let text = `
+        let zerotwo = n[Math.floor(Math.random() * n.length)]
+        return void this.client.sendMessage(M.from, { url: zerotwo }, MessageType.video, {quoted:M.WAMessage,
+            mimetype: Mimetype.gif,
+            caption:`
 ╭──────────────────𐏋
 │⋊ 𝕌𝕤𝕖𝕣: *${M.sender.username}*
 │⋊ ℕ𝕒𝕞𝕖: Zero Two
