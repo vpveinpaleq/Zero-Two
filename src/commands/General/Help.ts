@@ -160,7 +160,7 @@ Type ${this.client.config.prefix}support to get Zero Two support group link in y
 ⌬ ${this.client.config.prefix}randomwallpaper
 
 
-   	 『 Zero Two 』
+           『 Zero Two 』
    Based on: Chitoge, Yotsuba and Void
    ©️ Synthesized Infinity
 
