@@ -49,25 +49,133 @@ export default class Command extends BaseCommand {
 │⋊ ℙ𝕣𝕖𝕗𝕚𝕩: ${this.client.config.prefix}
 │⋊ 𝕆𝕨𝕟𝕖𝕣: *${this.client.config.prefix}mod*
 │⋊ 𝕆𝕗𝕗𝕚𝕥𝕚𝕒𝕝 𝕊𝕦𝕡𝕡𝕠𝕣𝕥 𝔾𝕣𝕠𝕦𝕡: http://gg.gg/10xtwj
-╰──────────────────𐏋                            \n\n`
-            const keys = Object.keys(categories)
-            for (const key of keys)
-                text += `*🍁 ${this.client.util.capitalize(
-					key
-	         )}*\n❐ \`\`\`${categories[key]
-                    .map((command) => command.config?.command)
-                    .join(', ')}\`\`\`\n\n`
-            return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {quoted:M.WAMessage,
-            mimetype: Mimetype.gif,
-            caption: `${text} 
- 
- 
- 
-┌────────────┈❅
+╰──────────────────𐏋  
+
+╭──────────────────𐏋         
+│
+│	🍁 *Coding* 🍁
+│- github
+│
+│	🍁 *Educative Tools* 🍁
+│- brainly
+│- calculator
+│- crypto
+│- element
+│- ip
+│- weather
+│- trivia
+│- urbandictionary
+│
+│	🍁 *For Fun* 🍁
+│- ppcouple
+│- fact
+│- jail
+│- joke
+│- quote
+│- rip
+│- react
+│- ship
+│- trash
+│- trigger
+│- baka
+│- wanted
+│- why
+│- dare
+│- truth
+│- wasted
+│- chat
+│- doge
+│
+│	🍁 *Games* 🍁
+│- chess
+│
+│	🍁 *General Commands* 🍁
+│- admins
+│- exp
+│- help
+│- hi
+│- info
+│- invitelink
+│- mods
+│- profile
+│- rank
+│- support
+│- zerotwo
+│
+│	🍁 *Media* 🍁
+│- karaoke
+│- lyrics
+│- play
+│- spotify
+│- ytaudio
+│- ytvideo
+│- ytsearch
+│- iguser
+│- igdl
+│- tiktok
+│- video
+│- pinterest
+│- toimg
+│
+│	🍁 *Admins Only* 🍁
+│- activate
+│- deactivate
+│- open
+│- close
+│- promote
+│- demote
+│- delete
+│- everyone
+│- groupchange
+│- revoke
+│- remove
+│- purge
+│
+│	🍁 *Nature* 🍁
+│- fox
+│
+│	🍁 *Utilities* 🍁
+│- blur
+│- circle
+│- gif
+│- google
+│- retrieve
+│- screenshot
+│- steal
+│- sticker
+│- stickersearch
+│- subred
+│- translate
+│- wikipedia
+│- amazon
+│- shorturl
+│
+│	🍁 *Weeb* 🍁
+│- anime
+│- animeme
+│- character
+│- characterid
+│- genshincharacter
+│- kitsune
+│- loli
+│- waifu
+│- crossplay
+│- neko
+│- manga
+│- pokemon
+│- sauce
+│- vtuber
+│- megumin
+│- waifu
+│- wallpaper
+│- randomwallpaper
+╰──────────────────𐏋
+
+╭──────────────────𐏋
 │   	 『 Zero Two 』
 │   Based on: Chitoge and Void
 │   ©️ Synthesized Infinity
-└────────────┈⁂
+╰──────────────────𐏋
 
 🎗 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info and don't spam or call Zero Two.*` }
             )
