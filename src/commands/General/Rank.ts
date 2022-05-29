@@ -15,7 +15,7 @@ export default class Command extends BaseCommand {
 			category: "general",
 			usage: `${client.config.prefix}rank [tag/quote]`,
 			aliases: ["stats"],
-			baseXp: 10,
+			baseXp: 200,
 		});
 	}
 
