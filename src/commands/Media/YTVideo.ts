@@ -13,7 +13,7 @@ export default class Command extends BaseCommand {
             category: 'media',
             aliases: ['ytv'],
             usage: `${client.config.prefix}ytv [URL]`,
-            baseXp: 10
+            baseXp: 500
         })
     }
 
