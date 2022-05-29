@@ -62,13 +62,11 @@ export default class Command extends BaseCommand {
             caption: `${text} 
  
  
- ──❅┈[ 𝑍𝑒𝑟𝑜 𝑇𝑤𝑜 𝐵𝑜𝑡 ]┈❅──
- 
  
 ┌────────────┈❅
-│   『 Zero Two 』
+│   	 『 Zero Two 』
 │   Based on: Chitoge and Void
-│   Reverse Engineer: Fantox
+│   ©️ Synthesized Infinity
 └────────────┈⁂
 
 🎗 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info and don't spam or call Zero Two.*` }
