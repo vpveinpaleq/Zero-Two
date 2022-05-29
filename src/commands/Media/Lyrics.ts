@@ -14,7 +14,7 @@ export default class Command extends BaseCommand {
       category: "media",
       aliases: ["ly"],
       usage: `${client.config.prefix}lyrics [song_name]`,
-      baseXp: 40,
+      baseXp: 300,
     });
   }
   run = async (
