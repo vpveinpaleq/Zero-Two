@@ -155,7 +155,6 @@ Type ${this.client.config.prefix}support to get Zero Two support group link in y
 ⌬ ${this.client.config.prefix}sauce
 ⌬ ${this.client.config.prefix}vtuber
 ⌬ ${this.client.config.prefix}megumin
-⌬ ${this.client.config.prefix}waifu
 ⌬ ${this.client.config.prefix}wallpaper
 ⌬ ${this.client.config.prefix}randomwallpaper
 
