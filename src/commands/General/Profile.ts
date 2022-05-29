@@ -120,20 +120,72 @@ export default class Command extends BaseCommand {
 					level = 2;
 				} else if (exp < 2000) {
 					level = 3;
-				} else if (exp < 5000) {
+				} else if (exp < 3000) {
 					level = 4;
-				} else if (exp < 10000) {
+				} else if (exp < 4000) {
 					level = 5;
-				} else if (exp < 25000) {
+				} else if (exp < 5000) {
 					level = 6;
-				} else if (exp < 50000) {
+				} else if (exp < 7000) {
 					level = 7;
-				} else if (exp < 75000) {
+				} else if (exp < 8500) {
 					level = 8;
-				} else if (exp < 100000) {
+				} else if (exp < 10000) {
 					level = 9;
-				} else {
+				} else if (exp < 15000) {
 					level = 10;
+				} else if (exp < 20000) {
+					level = 11;
+				} else if (exp < 25000) {
+					level = 12;
+				} else if (exp < 50000) {
+					level = 13;
+				} else if (exp < 75000) {
+					level = 14;
+				} else if (exp < 100000) {
+					level = 15;
+				} else if (exp < 120000) {
+					level = 15;
+				} else if (exp < 130000) {
+					level = 16;
+				} else if (exp < 150000) {
+					level = 17;
+				} else if (exp < 200000) {
+					level = 18;
+				} else if (exp < 220000) {
+					level = 19;
+				} else if (exp < 250000) {
+					level = 20;
+				} else if (exp < 280000) {
+					level = 21;
+				} else if (exp < 300000) {
+					level = 22;
+				} else if (exp < 350000) {
+					level = 23;
+				} else if (exp < 400000) {
+					level = 24;
+				} else if (exp < 450000) {
+					level = 25;
+				} else if (exp < 500000) {
+					level = 26;
+				} else if (exp < 550000) {
+					level = 27;
+				} else if (exp < 600000) {
+					level = 28;
+				} else if (exp < 650000) {
+					level = 29;
+				} else if (exp < 700000) {
+					level = 30;
+				} else if (exp < 750000) {
+					level = 31;
+				} else if (exp < 800000) {
+					level = 32;
+				} else if (exp < 850000) {
+					level = 33;
+				} else if (exp < 900000) {
+					level = 34;
+				} else {
+					level = 35;
 				}
         await M.reply(
             await request.buffer(
