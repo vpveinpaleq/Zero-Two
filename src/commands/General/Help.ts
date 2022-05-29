@@ -25,137 +25,136 @@ export default class Command extends BaseCommand {
         return void this.client.sendMessage(M.from, { url: zerotwo }, MessageType.video, {quoted:M.WAMessage,
             mimetype: Mimetype.gif,
             caption:`
-╭──────────────────𐏋
-│⋊ 𝕌𝕤𝕖𝕣: *${M.sender.username}*
-│⋊ ℕ𝕒𝕞𝕖: Zero Two
-│⋊ ℙ𝕣𝕖𝕗𝕚𝕩: ${this.client.config.prefix}
-│⋊ 𝕆𝕨𝕟𝕖𝕣: *${this.client.config.prefix}mod*
-│⋊ 𝕆𝕗𝕗𝕚𝕥𝕚𝕒𝕝 𝕊𝕦𝕡𝕡𝕠𝕣𝕥 𝔾𝕣𝕠𝕦𝕡: http://gg.gg/10xtwj
-╰──────────────────𐏋  
 
-╭──────────────────𐏋         
+╭──────────────────𐏋  
+│
+│             📍 Zero Two Bot 📍
+│
+│Hello i am *Zero Two Bot*, based on *Chitoge* and *Void*.
+│All of my commands are listed below darling. Type ${this.client.config.prefix}help <Command Name> to get info about any specific command. 
+│Type ${this.client.config.prefix}support to get Zero Two support group link in your DM.
+│
 │
 │	🍁 *Coding* 🍁
-│- github
+│⌬ ${this.client.config.prefix}github
 │
 │	🍁 *Educative Tools* 🍁
-│- brainly
-│- calculator
-│- crypto
-│- element
-│- ip
-│- weather
-│- trivia
-│- urbandictionary
+│⌬ ${this.client.config.prefix}brainly
+│⌬ ${this.client.config.prefix}calculator
+│⌬ ${this.client.config.prefix}crypto
+│⌬ ${this.client.config.prefix}element
+│⌬ ${this.client.config.prefix}ip
+│⌬ ${this.client.config.prefix}weather
+│⌬ ${this.client.config.prefix}trivia
+│⌬ ${this.client.config.prefix}urbandictionary
 │
 │	🍁 *For Fun* 🍁
-│- ppcouple
-│- fact
-│- jail
-│- joke
-│- quote
-│- rip
-│- react
-│- ship
-│- trash
-│- trigger
-│- baka
-│- wanted
-│- why
-│- dare
-│- truth
-│- wasted
-│- chat
-│- doge
+│⌬ ${this.client.config.prefix}ppcouple
+│⌬ ${this.client.config.prefix}fact
+│⌬ ${this.client.config.prefix}jail
+│⌬ ${this.client.config.prefix}joke
+│⌬ ${this.client.config.prefix}quote
+│⌬ ${this.client.config.prefix}rip
+│⌬ ${this.client.config.prefix}react
+│⌬ ${this.client.config.prefix}ship
+│⌬ ${this.client.config.prefix}trash
+│⌬ ${this.client.config.prefix}trigger
+│⌬ ${this.client.config.prefix}baka
+│⌬ ${this.client.config.prefix}wanted
+│⌬ ${this.client.config.prefix}why
+│⌬ ${this.client.config.prefix}dare
+│⌬ ${this.client.config.prefix}truth
+│⌬ ${this.client.config.prefix}wasted
+│⌬ ${this.client.config.prefix}chat
+│⌬ ${this.client.config.prefix}doge
 │
 │	🍁 *Games* 🍁
-│- chess
+│⌬ ${this.client.config.prefix}chess
 │
 │	🍁 *General Commands* 🍁
-│- admins
-│- exp
-│- help
-│- hi
-│- info
-│- invitelink
-│- mods
-│- profile
-│- rank
-│- support
-│- zerotwo
+│⌬ ${this.client.config.prefix}admins
+│⌬ ${this.client.config.prefix}exp
+│⌬ ${this.client.config.prefix}help
+│⌬ ${this.client.config.prefix}hi
+│⌬ ${this.client.config.prefix}info
+│⌬ ${this.client.config.prefix}invitelink
+│⌬ ${this.client.config.prefix}mods
+│⌬ ${this.client.config.prefix}profile
+│⌬ ${this.client.config.prefix}rank
+│⌬ ${this.client.config.prefix}support
+│⌬ ${this.client.config.prefix}zerotwo
 │
 │	🍁 *Media* 🍁
-│- karaoke
-│- lyrics
-│- play
-│- spotify
-│- ytaudio
-│- ytvideo
-│- ytsearch
-│- iguser
-│- igdl
-│- tiktok
-│- video
-│- pinterest
-│- toimg
+│⌬ ${this.client.config.prefix}karaoke
+│⌬ ${this.client.config.prefix}lyrics
+│⌬ ${this.client.config.prefix}play
+│⌬ ${this.client.config.prefix}spotify
+│⌬ ${this.client.config.prefix}ytaudio
+│⌬ ${this.client.config.prefix}ytvideo
+│⌬ ${this.client.config.prefix}ytsearch
+│⌬ ${this.client.config.prefix}iguser
+│⌬ ${this.client.config.prefix}igdl
+│⌬ ${this.client.config.prefix}tiktok
+│⌬ ${this.client.config.prefix}video
+│⌬ ${this.client.config.prefix}pinterest
+│⌬ ${this.client.config.prefix}toimg
 │
 │	🍁 *Admins Only* 🍁
-│- activate
-│- deactivate
-│- open
-│- close
-│- promote
-│- demote
-│- delete
-│- everyone
-│- groupchange
-│- revoke
-│- remove
-│- purge
+│⌬ ${this.client.config.prefix}activate
+│⌬ ${this.client.config.prefix}deactivate
+│⌬ ${this.client.config.prefix}open
+│⌬ ${this.client.config.prefix}close
+│⌬ ${this.client.config.prefix}promote
+│⌬ ${this.client.config.prefix}demote
+│⌬ ${this.client.config.prefix}delete
+│⌬ ${this.client.config.prefix}everyone
+│⌬ ${this.client.config.prefix}groupchange
+│⌬ ${this.client.config.prefix}revoke
+│⌬ ${this.client.config.prefix}remove
+│⌬ ${this.client.config.prefix}purge
 │
 │	🍁 *Nature* 🍁
-│- fox
+│⌬ ${this.client.config.prefix}fox
 │
 │	🍁 *Utilities* 🍁
-│- blur
-│- circle
-│- gif
-│- google
-│- retrieve
-│- screenshot
-│- steal
-│- sticker
-│- stickersearch
-│- subred
-│- translate
-│- wikipedia
-│- amazon
-│- shorturl
+│⌬ ${this.client.config.prefix}blur
+│⌬ ${this.client.config.prefix}circle
+│⌬ ${this.client.config.prefix}gif
+│⌬ ${this.client.config.prefix}google
+│⌬ ${this.client.config.prefix}retrieve
+│⌬ ${this.client.config.prefix}screenshot
+│⌬ ${this.client.config.prefix}steal
+│⌬ ${this.client.config.prefix}sticker
+│⌬ ${this.client.config.prefix}stickersearch
+│⌬ ${this.client.config.prefix}subred
+│⌬ ${this.client.config.prefix}translate
+│⌬ ${this.client.config.prefix}wikipedia
+│⌬ ${this.client.config.prefix}amazon
+│⌬ ${this.client.config.prefix}shorturl
 │
 │	🍁 *Weeb* 🍁
-│- anime
-│- animeme
-│- character
-│- characterid
-│- genshincharacter
-│- kitsune
-│- loli
-│- waifu
-│- crossplay
-│- neko
-│- manga
-│- pokemon
-│- sauce
-│- vtuber
-│- megumin
-│- waifu
-│- wallpaper
-│- randomwallpaper
-╰──────────────────𐏋
-
-╭──────────────────𐏋
+│⌬ ${this.client.config.prefix}anime
+│⌬ ${this.client.config.prefix}animeme
+│⌬ ${this.client.config.prefix}character
+│⌬ ${this.client.config.prefix}characterid
+│⌬ ${this.client.config.prefix}genshincharacter
+│⌬ ${this.client.config.prefix}kitsune
+│⌬ ${this.client.config.prefix}loli
+│⌬ ${this.client.config.prefix}waifu
+│⌬ ${this.client.config.prefix}crossplay
+│⌬ ${this.client.config.prefix}neko
+│⌬ ${this.client.config.prefix}manga
+│⌬ ${this.client.config.prefix}pokemon
+│⌬ ${this.client.config.prefix}sauce
+│⌬ ${this.client.config.prefix}vtuber
+│⌬ ${this.client.config.prefix}megumin
+│⌬ ${this.client.config.prefix}waifu
+│⌬ ${this.client.config.prefix}wallpaper
+│⌬ ${this.client.config.prefix}randomwallpaper
+│
+│
 │   	 『 Zero Two 』
-│   Based on: Chitoge and Void
+│   Based on: Chitoge, Yoysuba and Void
 │   ©️ Synthesized Infinity
 ╰──────────────────𐏋
 
