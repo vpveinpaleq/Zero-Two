@@ -30,9 +30,11 @@ export default class Command extends BaseCommand {
 
               📍 Zero Two Bot 📍
 
-Hello, *${M.sender.username}* i am *Zero Two Bot*, based on *Chitoge* and *Void*.
-All of my commands are listed below darling. Type ${this.client.config.prefix}help <Command Name> to get info about any specific command. 
-Type ${this.client.config.prefix}support to get Zero Two support group link in your DM.
+Ⓞ Hello, *${M.sender.username}* i am *Zero Two Bot*, based on *Chitoge* and *Void*.
+Ⓞ All of my commands are listed below darling. Type ${this.client.config.prefix}help <Command Name> to get info about any specific command. 
+Ⓞ Type ${this.client.config.prefix}support to get Zero Two support group link in your DM.
+Ⓞ Contact ${this.client.config.prefix}mods to to add me in your groups.
+
 
 
 	🍁 *Coding* 🍁
