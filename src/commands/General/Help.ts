@@ -25,10 +25,7 @@ export default class Command extends BaseCommand {
         return void this.client.sendMessage(M.from, { url: zerotwo }, MessageType.video, {quoted:M.WAMessage,
             mimetype: Mimetype.gif,
             caption:`
-
-  
-
-              📍 Zero Two Bot 📍
+               📍 Zero Two Bot 📍
 
 Ⓞ Hello, *${M.sender.username}* i am *Zero Two Bot*, based on *Chitoge* and *Void*.
 Ⓞ All of my commands are listed below darling. Type ${this.client.config.prefix}help <Command Name> to get info about any specific command. 
@@ -161,8 +158,9 @@ export default class Command extends BaseCommand {
 ⌬ ${this.client.config.prefix}randomwallpaper
 
 
-           『 Zero Two 』
+  『 Zero Two 』
    Based on: Chitoge, Yotsuba and Void
+   Character theme designer: Fantox
    ©️ Synthesized Infinity
 
 
